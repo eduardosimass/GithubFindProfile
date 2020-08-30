@@ -20,12 +20,11 @@ listagem de repositórios</p>
      - Mostrar repositóris, estrelas, forks e watchers. 
       
 
+<p align="justify"> Acessar demo da pagina https://eager-poitras-378d1f.netlify.app/ </p>
 
 
 
-
-
-<img src="https://img.shields.io/static/v1?label=Javascript&message=tecnologia&color=yelow&style=for-the-badge&logo=JAVASCRIPT"/>
+<img align="justify" src="https://img.shields.io/static/v1?label=Javascript&message=tecnologia&color=yelow&style=for-the-badge&logo=JAVASCRIPT"/>
 
 
 
