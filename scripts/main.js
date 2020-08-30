@@ -4,8 +4,8 @@
   const search = document.querySelector("#search");
   const profile = document.querySelector("#profile");
   const url = "https://api.github.com/users";
-  const client_id = "Iv1.8bfd24d9acf14878";
-  const client_secret = "42f28ee69d2bed574ebe05fe84188393d5ea0283";
+  const client_id = "84c9f6840c9dacb27164";
+  const client_secret = "dbb7982510f58b27095c70ec3af32afea3e441b4";
   const count = "per_page=3";
 
 
@@ -34,7 +34,7 @@
       <img class="card-img-top" src="${user.avatar_url}">
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Nome : <span class="badge badge-success">${user.name}</span></li>
-        <li class="list-group-item">Bio:<span class="badge badge-success">${user.bio}</span></li>
+        <li class="list-group-item">Bio:<span class="badge">${user.bio}</span></li>
         <li class="list-group-item">Email:<span class="badge badge-success">${user.email}</span></li>
         <li class="list-group-item">Repositórios : <span class="badge badge-success">${user.public_repos}</span></li>
         <li class="list-group-item">Seguidores : <span class="badge badge-primary">${user.followers}</span></li>
@@ -63,6 +63,7 @@
             </div>
             <div class="col-md-6">
               <span class="badge badge-primary">Stars: ${repo.stargazers_count} </span>
+              <span class="badge badge-primary">Tec.: ${repo.language} </span>
               <span class="badge badge-success">Watchers: ${repo.watchers_count}</span>
               <span class="badge badge-warning">Forks: ${repo.stargazers_count}</span>
       </div>               
@@ -70,10 +71,14 @@
        
         <a href="${repo.html_url}" target="_blank" class="btn btn-warning btn-block">Ver detalhes do Repositório</a>
       </div>
+      <div class="card-body">
+      <a href="${repo.repos_url}" target="_blank" class="btn btn-dark">Ver todos os Repositórios </a>
+      </div>
+      
               </div>
             </div>
         
-          </div></div>`
+          </div></div> `
 
       document.getElementById('repos').innerHTML = output;
 
