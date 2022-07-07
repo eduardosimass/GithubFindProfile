@@ -89,7 +89,7 @@
 
 
 
-  submit.addEventListener('keyup', (e) => {
+  submit.addEventListener('click', (e) => {
     let text = search.value 
     const user = e.target.value;
 
