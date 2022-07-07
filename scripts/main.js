@@ -2,7 +2,7 @@
 
 (function () {
   const search = document.querySelector("#search");
-  const submit = document.querySelector("search")
+  const submit = document.querySelector("#submit")
   const profile = document.querySelector("#profile");
   const url = "https://api.github.com/users";
   const client_id = "84c9f6840c9dacb27164";
