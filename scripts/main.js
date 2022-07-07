@@ -89,10 +89,8 @@
 
 
 
-  submit.addEventListener('click', (e) => {
+  submit.addEventListener('click', () => {
     let text = search.value 
-    const user = e.target.value;
-
     if (user.length > 0) {
       getUser(user).then(res => {
         showDataProfile(res.profile)
