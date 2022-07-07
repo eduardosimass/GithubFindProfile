@@ -2,6 +2,7 @@
 
 (function () {
   const search = document.querySelector("#search");
+  const submit = document.querySelector("search")
   const profile = document.querySelector("#profile");
   const url = "https://api.github.com/users";
   const client_id = "84c9f6840c9dacb27164";
@@ -88,7 +89,8 @@
 
 
 
-  search.addEventListener('keyup', (e) => {
+  submit.addEventListener('keyup', (e) => {
+    let text = search.value 
     const user = e.target.value;
 
     if (user.length > 0) {
