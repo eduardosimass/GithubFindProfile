@@ -23,6 +23,10 @@ body {
 #profile{ 
   font-size: 1.3rem;
 }
+
+#submit{
+  color: #7159c1;
+}
 .search-area h2 {
   margin-bottom: 1.6rem;
   font-size: 3rem;
