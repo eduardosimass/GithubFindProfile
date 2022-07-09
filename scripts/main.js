@@ -88,9 +88,12 @@
   }
 
 
+  
 
-  submit.addEventListener('click', () => {
-    let text = search.value 
+  document.getElementById('submit').onclick = (e) => {
+    const user = document.getElementById('search').value 
+
+
     if (user.length > 0) {
       getUser(user).then(res => {
         showDataProfile(res.profile)
@@ -98,6 +101,6 @@
       });
     }
 
-  })
+  };
 })();
 
